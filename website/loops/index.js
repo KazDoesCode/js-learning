@@ -35,7 +35,7 @@ while(!logged){
 
 
 // This part is asking for my loggings in order for me to access the page using the do while loop
-
+/*
 let logged = false;
 let username;
 let password;
@@ -49,3 +49,21 @@ do{
     }
     else window.alert(`Wrong !`);
 } while(!logged);
+*/
+
+
+// for loop while using continue and break
+
+
+for(let i = 1; i<= 10; i++) {
+    if(i==7){
+        continue; //here continue will skip number 13 and will only print 1-2-3-4-5-6-8-9-10
+        // break; // here break will get us out the loop when it reaches 7, it will print 1-2-3-4-5-6
+    
+    }
+    else console.log(i);
+    
+}
+
+console.log('GOOOOOO');
+
