@@ -16,6 +16,7 @@ p1.textContent=`Welcome to the party ${user1}`;
 }
 
 // This part is asking for my loggings in order for me to access the page using the while loop
+/*
 let logged = false;
 let username;
 let password;
@@ -29,3 +30,22 @@ while(!logged){
     }
     else window.alert(`Wrong !`);
 }
+*/
+
+
+
+// This part is asking for my loggings in order for me to access the page using the do while loop
+
+let logged = false;
+let username;
+let password;
+
+do{
+    username = window.prompt(`enter username`);
+    password = window.prompt(`enter password`);
+    if(username === "zak" && password === "0000") {
+        window.alert(`Welcome ${username} to the hood`)
+        logged = true;
+    }
+    else window.alert(`Wrong !`);
+} while(!logged);
