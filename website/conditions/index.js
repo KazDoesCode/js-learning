@@ -9,7 +9,7 @@ let age;
 mySubmit.onclick = function(){
 
     age = myText.value;
-    age = Number(age);
+    age = Math.round(Number(age)); 
     
     if(age >= 65){
         resultElement.textContent = `Senior ticket 15$`;
