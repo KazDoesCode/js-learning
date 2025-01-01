@@ -1,24 +1,31 @@
+const p1 = document.getElementById("p1");
+const input1 = document.getElementById("input1");
+const but1 = document.getElementById("but1");
 
-const myP = document.getElementById("myP");
-const input = document.getElementById("input");
-const but = document.getElementById("but");
-
-let user;
+let user1;
 
 
-but.onclick = function(){
-    user = input.value;
-    if (user === "") {
-        console.log("You need to enter a username");
-        myP.textContent = "You need to enter a username";
+but1.onclick = function() {
+    user1 = input1.value;
+
+    while(user1 === "" || user1 === null){          // null added cuz when we click on cancel on window prompt it prints Welcome null
+        p1.textContent="Please enter a username";
+        user1 = window.prompt("Enter something a si khouna");
     }
-    else {
-         console.log(`Welcome ${user}`);
-         myP.textContent = `Welcome ${user}`;
-    }
+p1.textContent=`Welcome to the party ${user1}`;   
 }
 
-// lesson learned : `` is to be used when we want to use the ${variable}
-// check the event
-// Always use curly braces {} for if and else blocks if they have more than one statement.
+// This part is asking for my loggings in order for me to access the page using the while loop
+let logged = false;
+let username;
+let password;
 
+while(!logged){
+    username = window.prompt(`enter username`);
+    password = window.prompt(`enter password`);
+    if(username === "zak" && password === "0000") {
+        window.alert(`Welcome ${username} to the hood`)
+        logged = true;
+    }
+    else window.alert(`Wrong !`);
+}
