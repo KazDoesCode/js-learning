@@ -1,0 +1,24 @@
+Wrong Event Element
+
+Mistake: Used input.onclick instead of but.onclick.
+Fix: Attach the event listener to the button (but), not the input field.
+Incorrect String Interpolation
+
+Mistake: Used double quotes with ${user} instead of backticks.
+Fix: Use backticks (`\) for template literals.
+Input Value Retrieval
+
+Mistake: Logic didn’t fetch input.value properly when clicking the button.
+Fix: Ensure input.value is read inside the button's click handler.
+Unclosed Code Block
+
+Mistake: Missing closing } for the function in your JavaScript.
+Fix: Always check for proper closure of braces.
+Readability
+
+Mistake: Mixed console.log for debugging and user messages.
+Fix: Use console.log only for debugging and textContent for user-facing output.
+
+Always use curly braces {} for if and else blocks if they have more than one statement.
+
+// lesson learned : `` is to be used when we want to use the ${variable}
