@@ -22,6 +22,13 @@ while(run) {                // The condition MUST be TRUE in order to be in the 
         run = false;  // HERE we got the right answer and this is where we wanna exit the loop
     }
 
+    else if(isNaN(guess)){                          // NaN() is a function that verify if variable is number
+        window.alert("Please enter a valid number");
+    }
+
+    else if(guess < min || guess > max){
+        window.alert("Please enter a valid number in the range !");
+    }
     else if (guess != answer) {
         console.log("WRONG ! Repeat");   
 

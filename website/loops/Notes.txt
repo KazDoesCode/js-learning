@@ -62,3 +62,14 @@ Summary:
 do...while is better when you want the loop to run at least once, regardless of the initial condition. This is useful when user input or similar logic is involved where an action should happen at least once.
 
 while is better when you want the loop to execute only if the condition is true from the beginning, such as processing data or performing tasks where the condition should be met before the loop starts.
+
+
+WHAT I DID LEARN FROM THE GUESSING GAME video:
+
+Importance of converting a variable to a number!
+window.prompt and console log usage
+WHILE loop The condition MUST be TRUE in order to be in the while condition, convert the condition to false to exit the loop !
+NaN() is a function that verify if variable is number
+
+
+The video : https://www.youtube.com/watch?v=maB0r59KOUk&list=PLZPZq0r_RZOO1zkgO4bIdfuLpizCeHYKv&index=22&ab_channel=BroCode
