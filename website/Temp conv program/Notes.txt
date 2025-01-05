@@ -1,0 +1,22 @@
+The mail checker needs to be improved using RegEx to see if the mail is truly valid because this current program detects 'kjfekjf@' while its not it has to be finished with a domaine name
+
+
+
+When to Use return:
+When you need the function to calculate and give back a value (e.g., for further use or saving).
+Example: A function to calculate a discount or total price.
+javascript
+Copier le code
+function calculateTotal(price, discount) {
+    return price - discount;
+}
+let total = calculateTotal(100, 20); // total = 80
+When Not to Use return:
+When the function's purpose is only to perform an action, like logging, updating UI, or triggering an event.
+Example: A function to display a message.
+javascript
+Copier le code
+function greet(name) {
+    console.log("Hello, " + name + "!");
+}
+greet("Alice"); // Prints: Hello, Alice!
