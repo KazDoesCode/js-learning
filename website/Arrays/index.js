@@ -37,3 +37,11 @@ p.textContent = `${alphabets} and the lenght is ${alphabets.length} and the posi
  let Last_names = ["Johness","Cristiano"]
 let full_name = [...First_names,...Last_names]
  p4.textContent = full_name.join("--")
+
+ function combineStrings(...strings){     // REST parametres to be used on functions to add elements to the array
+   return strings.join(" ");
+}
+
+const fullName = combineStrings("Mr.", "Spongebob", "Squarepants", "III");
+
+console.log(fullName);
