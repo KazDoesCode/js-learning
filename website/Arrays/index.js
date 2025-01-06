@@ -1,6 +1,8 @@
 const p = document.getElementById("p1")
 const p2 = document.getElementById("p2")
 const p3 = document.getElementById("p3")
+const p4 = document.getElementById("p3")
+
 
 alphabets = ["A","B","C"]
 alphabets[3] = "D"
@@ -24,3 +26,14 @@ p.textContent = `${alphabets} and the lenght is ${alphabets.length} and the posi
     p3.textContent = `P3 is ${alphabets[alpha]}`
 
  }
+
+ let phrase = "This is a phrase"
+ let letters = [...phrase]      /// the ... is like extracting a winrar it's gives each element out
+ letters = letters.join("-")   // this will join caracters to each other and use the "-" between them
+ // if unpacking used on an array, it will simply give out each element
+ //p4.textContent = letters
+
+ let First_names = ["John","Ronaldo","Bale"]
+ let Last_names = ["Johness","Cristiano"]
+let full_name = [...First_names,...Last_names]
+ p4.textContent = full_name.join("--")
