@@ -1,0 +1,75 @@
+Wrong Event Element
+
+Mistake: Used input.onclick instead of but.onclick.
+Fix: Attach the event listener to the button (but), not the input field.
+Incorrect String Interpolation
+
+Mistake: Used double quotes with ${user} instead of backticks.
+Fix: Use backticks (`\) for template literals.
+Input Value Retrieval
+
+Mistake: Logic didn’t fetch input.value properly when clicking the button.
+Fix: Ensure input.value is read inside the button's click handler.
+Unclosed Code Block
+
+Mistake: Missing closing } for the function in your JavaScript.
+Fix: Always check for proper closure of braces.
+Readability
+
+Mistake: Mixed console.log for debugging and user messages.
+Fix: Use console.log only for debugging and textContent for user-facing output.
+
+Always use curly braces {} for if and else blocks if they have more than one statement.
+
+// lesson learned : `` is to be used when we want to use the ${variable}
+
+
+
+Here are some examples to help you understand when do...while is better and when while is more suitable.
+
+1. When do...while is better:
+Use a do...while loop when you need to execute the loop at least once, regardless of the condition. This is common when you want to ask the user for input and validate it, and you want to ask for input at least once before checking if it's valid.
+
+Example: Asking for User Input at Least Once
+javascript
+Copier le code
+let userInput;
+
+do {
+    userInput = window.prompt("Enter a number greater than 10:");
+} while (userInput <= 10);
+
+console.log("Valid input:", userInput);
+In this case, you want to ask the user for input at least once, even if they enter a number less than or equal to 10.
+The loop will keep asking for input until the user enters a valid number greater than 10.
+The condition is checked after the prompt, so the loop runs at least once.
+2. When while is better:
+Use a while loop when you want the loop to run only if the condition is true from the beginning. It's more appropriate when you don't want to execute the code if the condition is false at the start.
+
+Example: Checking if an Array Is Empty Before Processing
+javascript
+Copier le code
+let numbers = [1, 2, 3];
+
+while (numbers.length > 0) {
+    let number = numbers.pop();
+    console.log("Processing number:", number);
+}
+In this case, the loop will only execute if the array numbers is not empty at the start.
+If numbers were empty, the loop would not run at all, which is the desired behavior here.
+The condition is checked before the loop starts, ensuring that we only process the numbers if the array is non-empty.
+Summary:
+do...while is better when you want the loop to run at least once, regardless of the initial condition. This is useful when user input or similar logic is involved where an action should happen at least once.
+
+while is better when you want the loop to execute only if the condition is true from the beginning, such as processing data or performing tasks where the condition should be met before the loop starts.
+
+
+WHAT I DID LEARN FROM THE GUESSING GAME video:
+
+Importance of converting a variable to a number!
+window.prompt and console log usage
+WHILE loop The condition MUST be TRUE in order to be in the while condition, convert the condition to false to exit the loop !
+NaN() is a function that verify if variable is number
+
+
+The video : https://www.youtube.com/watch?v=maB0r59KOUk&list=PLZPZq0r_RZOO1zkgO4bIdfuLpizCeHYKv&index=22&ab_channel=BroCode
