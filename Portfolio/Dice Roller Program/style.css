@@ -41,3 +41,11 @@ button{
 button:hover{
     cursor: pointer;
 }
+
+
+div#DiceImagesDiv img{
+
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
