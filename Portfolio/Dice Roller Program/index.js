@@ -16,8 +16,8 @@ function rollDice() {
         images.push(`<img src="images/${value}.png">`)
     }
 
-    result.textContent = values
-    diceImages.innerHTML = images
+    result.textContent = values.join("  ")
+    diceImages.innerHTML = images.join("")
 
 
     
