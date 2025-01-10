@@ -9,9 +9,28 @@
 <body>
     <div id="container">
         <h1 id="head-title">Password Generator</h1><br>
-        <label>Number of dice</label>
-        <input type="number" value="1" min="1" max="10" id="dice-input">
-        <button type="submit" onclick="rollDice()" id="DiceRoller">Roll Dice</button><br><br>
+        <label>Desired Password Length</label>
+        <input type="number" value="1" min="1" max="12" id="len-input" required><br><br><br>
+
+        <input type="checkbox" id="Uppercase" value="Contains Uppercase">
+        <label for="Uppercase">Contains Uppercase</label><br><br>
+
+        <input type="checkbox" id="Lowercase" value="Contains Lowercase">
+        <label for="Lowercase">Contains Lowercase</label><br><br>
+
+        <input type="checkbox" id="numbers" value="Contains Numbers">
+        <label for="numbers">Contains Numbers</label><br><br>
+
+        
+        <input type="checkbox" id="symbols" value="Contains Symbols">
+        <label for="symbols">Contains Symbols</label><br><br><br>
+
+        <button type="submit" onclick="generatepassword()" id="PassGen">Generate password</button><br><br><br>
+
+
+
+
+
     </div> 
     
     <div id="DiceResultDiv">
@@ -20,9 +39,6 @@
 
     </div>
     
-    <div id="DiceImagesDiv">
-        
-    </div>
 
     <script src="index.js"></script>
 </body>
